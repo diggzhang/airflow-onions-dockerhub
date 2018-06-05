@@ -54,6 +54,7 @@ RUN set -ex \
     && pip install ndg-httpsclient \
     && pip install cryptography \
     && pip install paramiko \
+    && pip install flask_bcrypt \
     && pip install pyasn1 \
     && pip install kombu==4.1.0 \
     && pip install celery[redis]==4.0.2 \
