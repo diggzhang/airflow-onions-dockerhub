@@ -32,6 +32,7 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             - ./config:/usr/local/airflow
+            - ./airflow_logs:/usr/local/airflow/logs
             # Uncomment to include custom plugins
             # - ./plugins:/usr/local/airflow/plugins
         ports:
@@ -63,6 +64,7 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             - ./config:/usr/local/airflow
+            - ./airflow_logs:/usr/local/airflow/logs
             # Uncomment to include custom plugins
             # - ./plugins:/usr/local/airflow/plugins
         environment:
@@ -83,6 +85,7 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             - ./config:/usr/local/airflow
+            - ./airflow_logs:/usr/local/airflow/logs
             # Uncomment to include custom plugins
             # - ./plugins:/usr/local/airflow/plugins
         environment:
